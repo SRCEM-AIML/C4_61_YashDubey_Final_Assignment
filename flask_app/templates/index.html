@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <a href="{{ url_for('greet') }}" class="button">Go to Greeting Form</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  flask_app:
+    build: ./flask_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./flask_app:/app
+    environment:
+      - FLASK_ENV=development
+
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile.django
+    ports:
+      - "8000:8000"
