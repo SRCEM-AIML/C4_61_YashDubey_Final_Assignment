@@ -4,12 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %}Flask App{% endblock %}</title>
-    <style>
-        body { font-family: sans-serif; margin: 20px; }
-        .flash { background: #cee5f5; padding: 10px; border: 1px solid #aacbe2; margin-bottom: 10px; }
-        .flash.error { background: #f5c7ce; border: 1px solid #e2aacc; }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}

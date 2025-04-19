@@ -98,9 +98,6 @@ docker push yashdubey2004/django_app:latest
 
 ---
 
-## 📄 License
-This project is released under the MIT License.
-
 ---
 
 *Happy Coding!* 🎉
